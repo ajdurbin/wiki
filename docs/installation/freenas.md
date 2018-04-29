@@ -1,0 +1,16 @@
+### Installation 
+  - Requires two USB drives, for installation image and installation target
+  - Choose FreeNAS installer, select USB drive for installation target
+  - Fresh install, format boot device
+  - Hardware password
+  - BIOS booting
+  - Reboot and remove installation media
+  - Displays menu with IP for web GUI
+  - Open web GUI, sign in with root, hardware password
+  - Exit initial wizard
+  - Change hostname to `huron.localdomain`, timezone to America/Detroit
+  - `Storage -> Volumes -> Volume Manager` to create volume using all disks and ZFS RAID 0 or ZFS Striped
+  - Create a datasets, change user and group permissions to nobody
+  - Go to Sharing, select dataset, NSF share, change MapAll user and MapAll groups to nobody so it doesn't matter what user connects to the shares
+  - To mount in Unix, `mount -t nfs freenasip:/mnt/volumenname/datasetname /path/to/mount`
+  - Then unmount with `umount /path/to/mount`
