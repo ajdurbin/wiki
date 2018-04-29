@@ -1,6 +1,26 @@
 {
     "docs": [
         {
+            "location": "/", 
+            "text": "Welcome!\n\n\nWhat's this and what's it for?\n\n\nThis is my personal wiki. It will contain relevant information on software installations \n configurations, statistical and machine learning techniques and descriptions, and other related topics. \n\n\nWhat's it going to look like?\n\n\nThis wiki will attempt to be organized by broad topic like installation guide, statistics, etc. Longer pages will have a table of contents. Relevant links to external sources will also be provided in the pages. Code snippets and images will also be included.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome", 
+            "text": "", 
+            "title": "Welcome!"
+        }, 
+        {
+            "location": "/#whats-this-and-whats-it-for", 
+            "text": "This is my personal wiki. It will contain relevant information on software installations   configurations, statistical and machine learning techniques and descriptions, and other related topics.", 
+            "title": "What's this and what's it for?"
+        }, 
+        {
+            "location": "/#whats-it-going-to-look-like", 
+            "text": "This wiki will attempt to be organized by broad topic like installation guide, statistics, etc. Longer pages will have a table of contents. Relevant links to external sources will also be provided in the pages. Code snippets and images will also be included.", 
+            "title": "What's it going to look like?"
+        }, 
+        {
             "location": "/books/", 
             "text": "Machine Learning\n\n\n\n\nIntroduction To Machine Learning With Python\n\n\nIntroduction To Statistical Learning\n\n\nElements Of Statistical Learning\n\n\nDeep Learning With Python\n\n\n\n\nUnix\n\n\n\n\nMastering Regular Expressions\n\n\n\n\nThe Linux Command Line\n\n\n\n\n\n\nmining the social web\n\n\n\n\nintroduction to information retrieval\n\n\nnltk book html only\n\n\ngit book", 
             "title": "Books"
@@ -14,26 +34,6 @@
             "location": "/books/#unix", 
             "text": "Mastering Regular Expressions   The Linux Command Line    mining the social web   introduction to information retrieval  nltk book html only  git book", 
             "title": "Unix"
-        }, 
-        {
-            "location": "/start/", 
-            "text": "Welcome!\n\n\nWhat's this and what's it for?\n\n\nThis is my personal wiki. It will contain relevant information on software installations \n configurations, statistical and machine learning techniques and descriptions, and other related topics. \n\n\nWhat's it going to look like?\n\n\nThis wiki will attempt to be organized by broad topic like installation guide, statistics, etc. Longer pages will have a table of contents. Relevant links to external sources will also be provided in the pages. Code snippets and images will also be included.", 
-            "title": "Start"
-        }, 
-        {
-            "location": "/start/#welcome", 
-            "text": "", 
-            "title": "Welcome!"
-        }, 
-        {
-            "location": "/start/#whats-this-and-whats-it-for", 
-            "text": "This is my personal wiki. It will contain relevant information on software installations   configurations, statistical and machine learning techniques and descriptions, and other related topics.", 
-            "title": "What's this and what's it for?"
-        }, 
-        {
-            "location": "/start/#whats-it-going-to-look-like", 
-            "text": "This wiki will attempt to be organized by broad topic like installation guide, statistics, etc. Longer pages will have a table of contents. Relevant links to external sources will also be provided in the pages. Code snippets and images will also be included.", 
-            "title": "What's it going to look like?"
         }, 
         {
             "location": "/bash/git/", 
