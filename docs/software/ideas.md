@@ -1,0 +1,125 @@
+### About 
+
+This page is to log different software packages with short descriptions for possible later inclusion in my home lab. A lot of these will be from `https://github.com/Kickball/awesome-selfhosted`.
+
+### Virtualization 
+  - Docker
+  - lxc
+  - Proxmox
+
+### File Syncing 
+  - Resilio-Sync: Has Android/iOS applications and FreeNas plugin. Works well enough even though user permissions on installation are weird. Closed source.
+  - Syncthing: Has Android/iOS applications. Documentation not great for steps after installation to actually sync the folders from one site to another.
+  - RClone: Powerful tool for syncing folders/files to Google Drive. Great documentation.
+  - rsync: Command line tool for syncing folders or files one way or both ways with deletion or not.
+  - NextCloud: Selfhosted Google Drive replacement with Calendar, instant messaging support, etc. 
+
+### Machine Learning and Statistics 
+  - comet.ml: Cool utility for sharing models with other's including documentation, git support, etc.
+  - gluon: AWS/Microsoft tool similar to comet.ml
+  - TensorBoard: Visualize statistics from TensorFlow models.
+  - nbviewer: view notebooks from git repository as a website or using a static site generator
+  - jupyter hub: Jupyter notebook server and Python kernel for multiple users
+  - RStudio Server: R server with web GUI
+  - R Shiny server: Server for selfhosting R Shiny applications
+
+### Visualizations 
+  - Grafana
+
+### Databases 
+  - Graphite
+  - influxdb
+  - Kafka
+  - Cassandra
+  - Hadoop/Spark
+
+### Web services 
+  - reverse proxy to safely expose applications to outside world or just static site
+  - Redis for server side caching for web applications
+
+### Data Collection 
+  - Owntracks
+  - OpenWeatherMap
+  - openstreetmap
+  - personal statistics
+  - CTV
+  - timed still-shot photos of outdoors
+
+### CI/CD 
+  - Artifactory to store images
+  - Jenkins to build images from git repository
+  - kubernetes to deploy docker applications
+  - Internal pypi repository
+
+### Entertainment 
+  * Plex
+  * plex channels
+  * Sonarr
+  * Jacket
+  * Radarr
+  * Calibre
+  * Minecraft server
+  * Insurgency server?
+
+### tools 
+  - zabbix for monitoring hosts
+  - internal dns server besides pfsense host?
+  - authentication like FreeIPA
+  - IP phones, FreePBX
+
+### HPC 
+  * slurm/torque/whatever job schedular
+  * environment modules for different software versions
+  * mpi
+  * mp
+
+### Communication 
+  * Discord
+  * IRC
+  * RSS
+
+  * todo list outside wiki
+  * use Google Calendar more, contacts for address book
+  * chatbot
+  * Mkdocs wiki behind reverse proxy and pushed to github pages or readthedocs (can remove signature that bugs me) with notebooks on github provided to nbviewer in some notebook repository
+  * owntracks behind https
+  * zabbix statistics
+  * graphite stats exported from freenas, proxmox very easily, push to grafana
+  * shiny reverse proxy
+  * github tags for model passing pypi, etc
+  * selfhosted git and push to bitbucket, github also
+  * merge both data analytics repositories
+  * make a notebook repository and copy files there 
+  * make notebook viewer application
+  * link notebooks from github to nbviewer online
+  * upload all of grad school stuff to repos, do some cleaning up of miscellaneous notebook ones with better names
+  * raspberry pi mkdocs installation
+  * statistics and deep learning should all be single directory in new wiki
+  * get back into journal
+  * customizing bashrc, put bashrc rcprofile, any relevant config files in unix directory, reverse proxy files
+  * DUO two factor
+  * mkdocs gh-deploy for new documentation, poor performance on raspberry pi and annoying editing documents in real time with log files printed to screen, okay with running in vm or not? Deploying to github messed up personal website root, so also need to see if I'm fine not having personal website or not or including in new documentation.
+  * Use gitea instead of gogs and figure out ssh key situation for pushing since it's getting annoying using passwords
+  * reorganize python folders for notebook viewer
+  * create snippets repository like Bob Settlage?
+  * Rstudio/rshiny server in single machine
+  * jekyll for github pages, maybe that's okay to have github root page jekyll with wiki backend if single page?
+  * Try reverse proxy of shiny applications, wiki
+  * Fetch ASC code from Peter's repository since we worked on these things and there are lots of examples
+  * Journal? switch to python package or keep using Rmd
+  * Graphite/grafana fetch statistics from huron, superior maybe separate instance for open weather map
+  * own tracks
+  * travic ci instead of jenkins, need to figure out local installation
+  * kubernetes on superior root
+  * ci/cd pipeline with git -> jenkins/travisci -> artifactory -> kubernetes deployment
+  * unit testing with tox, other python packages
+  * list of standard R packages
+  * heroku
+  * redis server for web caching
+  * alpine linux images
+  * fix annoying windows/ubuntu dual boot time issue
+  * blender for 3d modeling
+  * look more into python parallel/distributed computing packages
+  * if pushing code to github always make a gh-pages branch with some docs in it to be pushed too, at least for some longer projects for nicer to read stuff
+  * git web hooks
+  * combine statistics/ml/dl/nlp pages into single directory

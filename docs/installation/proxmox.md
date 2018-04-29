@@ -26,3 +26,10 @@
 ### Container SSH 
 
 SSH isn't enabled in containers by default. For using a 'native' terminal instead of that included in the Proxmox GUI to SSH into a container, SSH into Proxmox then `lxc-attach --name <containerid>`. From `https://ping.flenny.net/2016/ssh-into-a-proxmox-lxc-container/`.
+
+### Locale errors in lxc containers 
+
+`locale-gen en_US.UTF-8`
+
+### accidents 
+installed git and mysql-server outside of container

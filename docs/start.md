@@ -1,4 +1,4 @@
-### Welcome! ==
+### Welcome! 
 
 ### What's this and what's it for? 
 

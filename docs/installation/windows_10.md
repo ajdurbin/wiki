@@ -1,0 +1,22 @@
+### Installation 
+
+  - ubuntu live usb and use gparted to remove partitions and format as ntfs
+  - boot windows 10 usb and select education edition - full name and select basic security question
+  - reconnect hard drives and reboot, if extra drives formatted as ntsf, they
+  - should automatically be added as the remaining drive letters, D,E,F,G, etc
+  - go to disk management and name them if necessary
+  - go to settings - notifications & actions, turn off notifications frm apps and other senders
+  - settings - storage: change where new content is saved and move everything to
+  - other drive (pictures, documents, etc)
+  - settings - remote desktop enabled
+  - settings - shared experiences - disable share across devices
+  - settings - printers & scanners: disable windows manage default printer
+  - settings - typing: turn off everything basically, same with pen & windows ink, autoplay
+  - settings - personalization: turn everything off basically unpin all junk from taskbar
+  - settings - personalization - taskbar: turn off contacts settings
+  - settings - privacy - basically turn everything off
+  - settings - cortanna: basically turn everything off
+  - settings - gaming: turn everything off
+  - downloads: chrome, keepass, btsync, notepad++, steam, gog, flux, rclone, geforce experience, google drive
+  - ubuntu dual boot: go to diskmgmt.msc and select C: partition and shrink volume, then boot ubuntu and install, should only select the C: drive and give no options unlike before. followed guide from: https://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/
+  - server naming scheme: great lakes, main pc is michigan

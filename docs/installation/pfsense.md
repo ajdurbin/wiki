@@ -17,3 +17,6 @@
   - Save, update, force update and watch lists download
   - Enable and save
   - Do same with EasyList `DNSBL`, check all, label as test and force update again
+
+### Use hostnames for SSH 
+From `https://www.bytesizedalex.com/pfsense-dns-resolution-for-dhcp-leases/`. Go to DNS Resolver and check Register DHCP leases and Register DHCP static mappings.
