@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Ubuntu - Alex's Personal Wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Ubuntu";
+    var mkdocs_page_input_path = "installation/ubuntu.md";
+    var mkdocs_page_url = "/installation/ubuntu/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../books/" class="icon icon-home"> Alex's Personal Wiki</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../books/">Books</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../start/">Start</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Bash</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../bash/git/">Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bash/regex/">Regex</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bash/snippets/">Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bash/tools/">Tools</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Deep learning</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../deep_learning/scratch/">Scratch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../bittorrent_sync/">Bittorrent sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../freenas/">Freenas</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../pfsense/">Pfsense</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../proxmox/">Proxmox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../raspberry_pi/">Raspberry pi</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../torrent_server/">Torrent server</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Ubuntu</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#installation">Installation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cuda-90-installation">CUDA 9.0 Installation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cudnn-70-installation">cuDNN 7.0 Installation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#tensorflow-with-gpu-support-installation">TensorFlow With GPU Support Installation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#hdf5">HDF5</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cv2">cv2</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../windows_10/">Windows 10</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Machine learning</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../machine_learning/methods/">Methods</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Natural language processing</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../natural_language_processing/scratch/">Scratch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Python</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../python/environments/">Environments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../python/packages/">Packages</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../python/scratch/">Scratch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../python/snippets/">Snippets</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Sklearn</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../python/sklearn/snippets/">Snippets</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Software</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../software/bittorrent_sync/">Bittorrent sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/emby/">Emby</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/gogs/">Gogs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/ideas/">Ideas</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/mkdocs/">Mkdocs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/plex/">Plex</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/rclone/">Rclone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/torrent_server/">Torrent server</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Statistics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../statistics/scratch/">Scratch</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../books/">Alex's Personal Wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../books/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Installation &raquo;</li>
+        
+      
+    
+    <li>Ubuntu</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="installation">Installation</h3>
+<ul>
+<li>Download latest Ubuntu LTS image and burn to USB</li>
+<li>Boot PC into BIOS and under Boot Options choose UEFI: USB_NAME to boot Ubuntu live image, then choose try Ubuntu without installing</li>
+<li>Open GParted and ignore the Libparted warning about physical block size <ul>
+<li>Carefully choose /dev/sd* corresponding to the SSD boot drive</li>
+<li>Choose the linux-swap partition and right-click and select Swapoff, this will redo the Libparted warning about physical block size after rescanning the partitions</li>
+<li>Right-click and delete both partitions separately, then hit the green check mark in GUI to apply these pending operations</li>
+<li>It deletes partitions and again raises the Libparted warning</li>
+<li>Exit GParted</li>
+</ul>
+</li>
+<li>Double click on install ubuntu icon<ul>
+<li>English -&gt; Continue</li>
+<li>Download updates or proprietary drivers during installation (not doing so gives broken screen on login)</li>
+<li>Choose install ubuntu alongside windows boot manager</li>
+<li>Install now, continue to write changes to disk</li>
+<li>Set Detroit, MI</li>
+<li>Give name, pc name, username, hardware password, require password to login</li>
+</ul>
+</li>
+<li>Restart when completed, it will prompt for removal of installation media before rebooting</li>
+<li>Windows 10 is accidentally prioritized on boot, so need to boot back into BIOS and choose the GRUB partition as highest priority.</li>
+<li>Will possibly get a black or broken screen on restarting<ul>
+<li>Per <code>https://askubuntu.com/questions/760934/graphics-issues-after-while-installing-ubuntu-16-04-16-10-with-nvidia-graphics</code> follow option 3</li>
+<li>Reboot into GRUB, highlight Ubuntu option and press <code>e</code></li>
+<li>Add <code>nouveau.modeset=0</code> to the end of the line beginning with <code>linux</code> </li>
+<li>Press <code>F10</code> to boot</li>
+</ul>
+</li>
+<li>If still black or broken screen after rebooting<ul>
+<li><code>Ctrl Alt F1</code> opens a new console</li>
+<li><code>sudo apt-get purge nvidia-*</code></li>
+<li><code>sudo add-apt-repository ppa:graphics-drivers/ppa</code></li>
+<li><code>sudo apt-get update</code></li>
+<li><code>sudo apt-get install nvidia-384</code> (or the latest Nvidia driver)</li>
+<li>Reboot and graphics issues should be solved</li>
+</ul>
+</li>
+<li>Fix miscellaneous settings</li>
+<li>Install Google Chrome <code>.deb</code> with <code>sudo dpkg -i google-chrome...</code> with an intermediate install fix with <code>sudo apt-get install -f</code> after first failing</li>
+<li>Install Vim, Git, KeePass, HTop, Tmux with <code>sudo apt-get install -y vim htop tmux keepass2 git</code></li>
+<li>Sound may not work immediately, open All Settings -&gt; Sound and 'Test Sound' usually fixes this</li>
+<li>Choosing Detroit as location at installation results in package updates and installation from Ubuntu's Cananda mirrors, going to Software &amp; Updates and choosing 'Download from: Main server' fixes this</li>
+</ul>
+<h3 id="cuda-90-installation">CUDA 9.0 Installation</h3>
+<ul>
+<li>Download Cuda 9.0 network <code>.deb</code> file</li>
+<li>Follow installation guide at <code>http://developer.download.nvidia.com/compute/cuda/9.0/Prod/docs/sidebar/CUDA_Installation_Guide_Linux.pdf</code></li>
+<li>Verify CUDA-capable GPU with <code>lspci | grep -i nvidia</code></li>
+<li>Verify support Linux version with <code>uname -m &amp;&amp; cat  /etc/*release</code></li>
+<li>Verify gcc is installed <code>gcc --version</code></li>
+<li>Verify correct kernel headers and development packages with <code>uname -r</code> then do <code>sudo apt-get install linux-headers-$(uname -r)</code></li>
+<li>Install repository meda-data with <code>sudo dpkg -i cuda-repo &lt;distro&gt;_&lt;version&gt;_&lt;architecture&gt;.deb</code></li>
+<li>Install CUDA public GPG key with <code>sudo apt-key adv --fetch-keys
+http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub</code></li>
+<li><code>sudo  apt-get  update  &amp;&amp; sudo apt-get install cuda-9-0</code> (or whatever version TensorFlow requires)<ul>
+<li><code>cuda-command-line-tools</code> will be installed</li>
+<li>Older <code>nvidia- libcuda1 nvidia-opencl-icd</code> will be removed and replaced with newer versions</li>
+</ul>
+</li>
+<li>Add path to PATH variable <code>export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}</code></li>
+<li>Since we used <code>.deb</code> installation, the following doesn't modify the path, but to be safe do <code>export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64\
+ ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}</code></li>
+<li>Install writable samples  with <code>cuda-install-samples-9.0.sh &lt;dir&gt;</code>, change into the directory, and <code>make</code><ul>
+<li>Compiling will take a file and some warnings or errors will be present, most are the result of the wrong CUDA version or environment variable in the code</li>
+<li>The old <code>nvidia-</code> graphics driver will still be present, so running <code>deviceQuery</code> will fail, restarting will show the newly installed <code>nvidia-</code> driver and <code>deviceQuery</code> will pass</li>
+</ul>
+</li>
+<li>Add the PATH export statemnts to <code>.bashrc</code></li>
+<li>Skip the Nsight plugin step</li>
+<li>Third-party libraries should already be installed</li>
+<li>Skip cuda-gdb installation</li>
+<li>In the 9.0 guide, ther Persistence Daemon installation is not included, but is in version 9.1, if necessary add <code>/usr/bin/nvidia-persistenced --verbose</code></li>
+</ul>
+<h3 id="cudnn-70-installation">cuDNN 7.0 Installation</h3>
+<ul>
+<li>Download all <code>.deb</code> files, ie, runtime, developer, and example files</li>
+<li>Do <code>sudo dpkg  -i libcudnn7...</code> for each starting with the runtime library, then developer library, then documentation and examples</li>
+<li>Verify installation with example<ul>
+<li><code>cp -r /usr/src/cudnn_samples_v7/ $HOME</code></li>
+<li><code>cd $HOME/cudnn_samples_v7/mnistCUDNN</code></li>
+<li><code>make clean &amp;&amp; make</code></li>
+<li><code>./mnistCUDNN</code></li>
+<li>If properly running, should see a "Test passed!" or similar message</li>
+</ul>
+</li>
+<li>Add <code>export CUDA_HOME=/usr/local/cuda</code> to <code>.bashrc</code></li>
+</ul>
+<h3 id="tensorflow-with-gpu-support-installation">TensorFlow With GPU Support Installation</h3>
+<ul>
+<li>Follow <code>https://www.tensorflow.org/install/install_linux</code></li>
+<li><code>cuda-command-line-tools</code> were already installed, so need only add its path to environment, <code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.0/extras/CUPTI/lib64</code> in <code>.bashrc</code></li>
+<li>Use "Virtualenv" installation mechanism</li>
+<li>Install pip, virtualenv, and python-dev with <code>sudo apt-get install python3-pip python3-dev python-virtualenv</code></li>
+<li>Create a virtual environment  <code>virtualenv --system-site-packages -p python3 targetdirectory</code></li>
+<li>Activate the environement <code>source ~/tensorflow/bin/activate</code></li>
+<li>Install with <code>pip3 install --upgrade tensorflow-gpu</code></li>
+<li>Validate the installation with <code>import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))</code></li>
+<li>Deactivate environment <code>deactivate</code></li>
+<li>To uninstall TensorFlow, <code>rm -r targetdirectory</code></li>
+</ul>
+<h3 id="hdf5">HDF5</h3>
+<p>For Keras features such as model saving to disk and using pre-trained models, this file system is necessary. Install it with <code>sudo apt-get install libhdf5-serial-dev</code>, which should install all the different HDF5 packages necessary. Then do <code>pip install hd5py</code> in your virtual environment. A warning will appear when using TensorFlow and models can be saved, however doing <code>hd5py.run_tests()</code> will fail. So this appears to be a non-issue for our uses.</p>
+<h3 id="cv2">cv2</h3>
+<p>Also needed for deep learning is the <code>OpenCV</code> package. In source directory install with <code>pip install opencv-python</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../windows_10/" class="btn btn-neutral float-right" title="Windows 10">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../torrent_server/" class="btn btn-neutral" title="Torrent server"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../torrent_server/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../windows_10/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      <script src="../../assets/mathjaxhelper.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>
