@@ -78,6 +78,7 @@ This page is to log different software packages with short descriptions for poss
   * IRC
   * RSS
 
+### word salad ### 
   * todo list outside wiki
   * use Google Calendar more, contacts for address book
   * chatbot
@@ -123,3 +124,21 @@ This page is to log different software packages with short descriptions for poss
   * if pushing code to github always make a gh-pages branch with some docs in it to be pushed too, at least for some longer projects for nicer to read stuff
   * git web hooks
   * combine statistics/ml/dl/nlp pages into single directory
+  * github pages personal page can't be with subdirectories, so try having only single top level page. mkdocs routing to convert dokuwiki text, need to rename start to index
+  * Manual mkdocs gh-deploy routine with ssh keys and checkout
+  * sample project to test sphinx functionality?
+  * continue using dokuwiki on pi (just so it can be used), and then convert files to mkdocs for github pages for outside usage?
+  * webhooks to trigger ci/cd pipelines
+  * web service for hosting applications from flask/tornado/gnuicorn
+  * heroku/pythonanywhere
+  * mongo/mariadb instead of mysql - recall https://www.reddit.com/r/AskReddit/comments/8fztrk/what_was_the_removing_the_headphone_jack_of/ and discussion of Oracle no longer developing mysql basically
+  * full virtualmachine with docker installed as docker host
+  * jenkins dockerfile github to artifactory and docker using travis ci when can
+  * appears that marathon is only for mesos-based systems
+  * kubernetes?
+  * traefik
+  * "hacking" fake terminal
+  * calibre server for ebooks
+  * get docker jenkins git pipeline first before worrying about artifactory
+
+Main goal is to get working git-jenkins-artifactory-docker plugin going. So we'd have a remote git repository to trigger a jenkins build that tests the software before sending to artifactory and then deploying on the docker server. 

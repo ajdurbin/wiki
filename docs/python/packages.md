@@ -92,3 +92,15 @@
     * web scraper
   * gensim sklearn api
   * jupyter notebook slides
+  * pipenv
+    * pip + venv
+  * opencv-python
+  * dash, plotly, bokeh
+  * rise is jupyter notebook slideshows
+  * reportlab
+  * jinja2
+  * optparse
+  * pyqt
+  * itertools dropwhile, takewhile
+  * pprint
+  * docker

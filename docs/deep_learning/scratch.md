@@ -30,6 +30,7 @@ This page is for miscellaneous notes on deep learning concepts, ideas, and probl
   * dilation
   * Dropout versus explicit regularization
   * Alternating convolutional layers beginning with descending 128 hidden layers to 64, 32, 16 before pooling with two sets of convolutional layers with stride length two first and one second
+  * conditional random fields
 
   * kaggle datasets
   * cv datasets on the web for image datasets in computer vision
@@ -38,3 +39,6 @@ This page is for miscellaneous notes on deep learning concepts, ideas, and probl
   * originalsnapchat filter
   * twitter stream
   * signal processing
+  * google cloud big data platform 
+  * vci machine learning repository 
+  * github awesome public datasets
