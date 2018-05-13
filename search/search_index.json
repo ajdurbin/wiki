@@ -197,7 +197,7 @@
         }, 
         {
             "location": "/installation/proxmox/", 
-            "text": "Installation\n\n\n\n\nGrab latest Proxmox iso and boot from USB\n\n\nChoose install\n\n\nSelect ZFS RAID 0 and choose hard drives, be sure to not include USB drive here\n\n\nChange timezone to America/Detroit\n\n\nEnter hardware password and email address\n\n\nChange FQDN to \nsuperior.localdomain\n\n\n\n\nConfiguration\n\n\n\n\nComment out \ndeb https://enterprise.proxmox.com/debian/pve stretch pve-enterprise\n in \n/etc/apt/sources.list.d/pve-enterprise.list\n\n\nAdd \ndeb http://download.proxmox.com/debian/pve stretch pve-no-subscription\n to \n/etc/apt/sources.list\n\n\napt-get update \n apt-get dist-upgrade\n\n\nAdd LXC templates at \nDatacenter -\n Superior -\n local (superior) -\n Content -\n Templates\n\n\nIf TurnKey templates are missing, do \npveam update\n\n\n\n\nMount FreeNAS NFS Shares On Boot\n\n\n\n\nMake subdirectories in \n/mnt\n named after datasets to be mounted, ie, \nmkdir /mnt/torrents\n\n\nEdit \n/etc/fstab\n with \nfreenasip:/mnt/volume/datasetname   /mnt/datasetname   nfs    _netdev,auto  0  0\n\n\nReboot and check file systems mounted properly\n\n\n\n\nContainer Bind Mounts\n\n\n\n\nEdit \n/etc/pve/lxc/\ncontainerid\n.conf\n with \nmp0: /proxmox/mount/path,mp=/container/mount/path\n\n\nRestart container and check \ndu -h\n to see available storage\n\n\nFrom \nhttps://pve.proxmox.com/wiki/Linux_Container#_bind_mount_points\n and \nhttps://www.jamescoyle.net/how-to/2019-proxmox-4-x-bind-mount-mount-storage-in-an-lxc-container\n\n\n\n\nContainer SSH\n\n\nSSH isn't enabled in containers by default. For using a 'native' terminal instead of that included in the Proxmox GUI to SSH into a container, SSH into Proxmox then \nlxc-attach --name \ncontainerid\n. From \nhttps://ping.flenny.net/2016/ssh-into-a-proxmox-lxc-container/\n.\n\n\nLocale errors in lxc containers\n\n\nlocale-gen en_US.UTF-8\n\n\naccidents\n\n\ninstalled git and mysql-server outside of container", 
+            "text": "Installation\n\n\n\n\nGrab latest Proxmox iso and boot from USB\n\n\nChoose install\n\n\nSelect ZFS RAID 0 and choose hard drives, be sure to not include USB drive here\n\n\nChange timezone to America/Detroit\n\n\nEnter hardware password and email address\n\n\nChange FQDN to \nsuperior.localdomain\n\n\n\n\nConfiguration\n\n\n\n\nComment out \ndeb https://enterprise.proxmox.com/debian/pve stretch pve-enterprise\n in \n/etc/apt/sources.list.d/pve-enterprise.list\n\n\nAdd \ndeb http://download.proxmox.com/debian/pve stretch pve-no-subscription\n to \n/etc/apt/sources.list\n\n\napt-get update \n apt-get dist-upgrade\n\n\nAdd LXC templates at \nDatacenter -\n Superior -\n local (superior) -\n Content -\n Templates\n\n\nIf TurnKey templates are missing, do \npveam update\n\n\n\n\nMount FreeNAS NFS Shares On Boot\n\n\n\n\nMake subdirectories in \n/mnt\n named after datasets to be mounted, ie, \nmkdir /mnt/torrents\n\n\nEdit \n/etc/fstab\n with \nfreenasip:/mnt/volume/datasetname   /mnt/datasetname   nfs    _netdev,auto  0  0\n\n\nReboot and check file systems mounted properly\n\n\n\n\n192.168.1.124:/mnt/tank/test /mnt/test nfs _netdev,auto 0 0\n192.168.1.124:/mnt/tank/torrent /mnt/torrent nfs _netdev,auto 0 0\n192.168.1.124:/mnt/tank/tv /mnt/tv nfs _netdev,auto 0 0\n192.168.1.124:/mnt/tank/movies /mnt/movies nfs _netdev,auto 0 0\n192.168.1.124:/mnt/tank/music /mnt/music nfs _netdev,auto 0 0\n\n\n\n\nContainer Bind Mounts\n\n\n\n\nEdit \n/etc/pve/lxc/\ncontainerid\n.conf\n with \nmp0: /proxmox/mount/path,mp=/container/mount/path\n\n\nRestart container and check \ndu -h\n to see available storage\n\n\nFrom \nhttps://pve.proxmox.com/wiki/Linux_Container#_bind_mount_points\n and \nhttps://www.jamescoyle.net/how-to/2019-proxmox-4-x-bind-mount-mount-storage-in-an-lxc-container\n\n\n\n\n# /etc/pve/lxc/101.conf (torrent server)\nmp0: /mnt/torrent,mp=/srv/storage/download\n# /etc/pve/lxc/102.conf (rclone)\nmp0: /mnt/torrent,mp=/mnt/torrent\nmp1: /mnt/tv,mp=/mnt/tv\nmp2: /mnt/movies,mp=/mnt/movies\n# /etc/pve/lxc/103.conf (plex)\nmp0: /mnt/tv,mp=/mnt/tv\nmp1: /mnt/movies,mp=/mnt/movies\nmp2: /mnt/music,mp=/mnt/music\n\n\n\n\nContainer SSH\n\n\nSSH isn't enabled in containers by default. For using a 'native' terminal instead of that included in the Proxmox GUI to SSH into a container, SSH into Proxmox then \nlxc-attach --name \ncontainerid\n. From \nhttps://ping.flenny.net/2016/ssh-into-a-proxmox-lxc-container/\n.\n\n\nLocale errors in lxc containers\n\n\nlocale-gen en_US.UTF-8\n\n\nLXC templates\n\n\nOption there to make a template from an existing container\n\n\nupload iso\n\n\nGo to superior -\n content and then upload", 
             "title": "Proxmox"
         }, 
         {
@@ -212,12 +212,12 @@
         }, 
         {
             "location": "/installation/proxmox/#mount-freenas-nfs-shares-on-boot", 
-            "text": "Make subdirectories in  /mnt  named after datasets to be mounted, ie,  mkdir /mnt/torrents  Edit  /etc/fstab  with  freenasip:/mnt/volume/datasetname   /mnt/datasetname   nfs    _netdev,auto  0  0  Reboot and check file systems mounted properly", 
+            "text": "Make subdirectories in  /mnt  named after datasets to be mounted, ie,  mkdir /mnt/torrents  Edit  /etc/fstab  with  freenasip:/mnt/volume/datasetname   /mnt/datasetname   nfs    _netdev,auto  0  0  Reboot and check file systems mounted properly   192.168.1.124:/mnt/tank/test /mnt/test nfs _netdev,auto 0 0\n192.168.1.124:/mnt/tank/torrent /mnt/torrent nfs _netdev,auto 0 0\n192.168.1.124:/mnt/tank/tv /mnt/tv nfs _netdev,auto 0 0\n192.168.1.124:/mnt/tank/movies /mnt/movies nfs _netdev,auto 0 0\n192.168.1.124:/mnt/tank/music /mnt/music nfs _netdev,auto 0 0", 
             "title": "Mount FreeNAS NFS Shares On Boot"
         }, 
         {
             "location": "/installation/proxmox/#container-bind-mounts", 
-            "text": "Edit  /etc/pve/lxc/ containerid .conf  with  mp0: /proxmox/mount/path,mp=/container/mount/path  Restart container and check  du -h  to see available storage  From  https://pve.proxmox.com/wiki/Linux_Container#_bind_mount_points  and  https://www.jamescoyle.net/how-to/2019-proxmox-4-x-bind-mount-mount-storage-in-an-lxc-container", 
+            "text": "Edit  /etc/pve/lxc/ containerid .conf  with  mp0: /proxmox/mount/path,mp=/container/mount/path  Restart container and check  du -h  to see available storage  From  https://pve.proxmox.com/wiki/Linux_Container#_bind_mount_points  and  https://www.jamescoyle.net/how-to/2019-proxmox-4-x-bind-mount-mount-storage-in-an-lxc-container   # /etc/pve/lxc/101.conf (torrent server)\nmp0: /mnt/torrent,mp=/srv/storage/download\n# /etc/pve/lxc/102.conf (rclone)\nmp0: /mnt/torrent,mp=/mnt/torrent\nmp1: /mnt/tv,mp=/mnt/tv\nmp2: /mnt/movies,mp=/mnt/movies\n# /etc/pve/lxc/103.conf (plex)\nmp0: /mnt/tv,mp=/mnt/tv\nmp1: /mnt/movies,mp=/mnt/movies\nmp2: /mnt/music,mp=/mnt/music", 
             "title": "Container Bind Mounts"
         }, 
         {
@@ -231,9 +231,14 @@
             "title": "Locale errors in lxc containers"
         }, 
         {
-            "location": "/installation/proxmox/#accidents", 
-            "text": "installed git and mysql-server outside of container", 
-            "title": "accidents"
+            "location": "/installation/proxmox/#lxc-templates", 
+            "text": "Option there to make a template from an existing container", 
+            "title": "LXC templates"
+        }, 
+        {
+            "location": "/installation/proxmox/#upload-iso", 
+            "text": "Go to superior -  content and then upload", 
+            "title": "upload iso"
         }, 
         {
             "location": "/installation/raspberry_pi/", 
