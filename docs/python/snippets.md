@@ -190,3 +190,18 @@ def unreliable_function_might_return_none():
 ```
 
 This snippet will continue to retry the function so long as the `retry_on_result` function is true.
+
+### Suppress Warnings 
+
+For cases when we want to suppress warnings
+
+```
+import warnings 
+...
+def warn(*arg, **kwargs):
+    pass
+...
+if __name__ == '__main__':
+    warnings.warn = warn
+    ...
+```

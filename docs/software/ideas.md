@@ -140,5 +140,30 @@ This page is to log different software packages with short descriptions for poss
   * "hacking" fake terminal
   * calibre server for ebooks
   * get docker jenkins git pipeline first before worrying about artifactory
+  * load balancer
+  * internal dns
+  * docker swarm/compose versus a kubernetes solution
+  * some sort of docker load balancing
+  * docker traefik
+  * gitlab has their own ci/cd stuff similar to jenkins/travis-ci
+  * bettercodehub
+  * static site generators like Hugo
+  * reverse proxy for non-static sites, like dokuwiki for instance or any other php web application
+  * digital ocean tutorials
+  * teraform
+  * caddy server
+  * haproxy
+  * freeipa
+  * freepbx
+  * reddit raspberry pi ups server tutorial
+  * recipe manager
+  * docker spark/hadoop images
+  * sonarqube
 
-Main goal is to get working git-jenkins-artifactory-docker plugin going. So we'd have a remote git repository to trigger a jenkins build that tests the software before sending to artifactory and then deploying on the docker server. 
+Main goal is to get working git-jenkins-artifactory-docker plugin going. So we'd have a remote git repository to trigger a jenkins build that tests the software before sending to artifactory and then deploying on the docker server. So the jenkins file will be split up to be build the image using docker server, then push image to docker registry, then pull image from docker registry and run. 
+
+Do more scientific computing so go back to learning a compiled code framework, more R shiny stuff, MCMC, Bayesian stats, maybe go back to C++ to do some CUDA, more web development with Flask/Django
+
+This is a great tutorial: `https://medium.com/bettercode/how-to-build-a-modern-ci-cd-pipeline-5faa01891a5b` and somewhat related `https://medium.com/@evheniybystrov/continuous-delivery-of-react-app-with-jenkins-and-docker-8a1ae1511b86`
+
+__Plan__: Put Jenkins on Docker host and use Docker's built in registry, look into Docker git server that's lightweight enough. Use these for development and then push applications to Heroku and use travis-ci for Github.

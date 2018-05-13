@@ -18,3 +18,4 @@
   * smooth plots with exponential moving average
   * set(list) to get unique list elements
   * use tox (integrate with testing in jenkins, travis-ci)
+  * use threading within class (like Ryan's automodeler)

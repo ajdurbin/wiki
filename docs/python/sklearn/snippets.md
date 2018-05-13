@@ -1,3 +1,6 @@
+### Usage 
+GridSearchCV, Pipeline, fit_transform vs fit, AUC, ROC, how to do hyperparameter search before training/cross-validation and then testing?
+
 ### GridSearchCV Over Multiple Models 
 
 Normally `GridSearchCV` is for hyperparameter optimization. This method is extended using the following class, where you specify a dictionary of models and a dictionary of dictionaries of their parameters to search over. After fitting this helper, call `helper.score_summary(sort_by = 'mean_score')` to return a dataframe of every model fit with parameters and scoring metrics. 
@@ -102,4 +105,30 @@ helper = EstimatorSelectionHelper(models, params)
 helper.fit(X_cancer, y_cancer, scoring = 'f1', n_jobs = -1)
 helper.score_summary(sort_by = 'mean_score')
 
+```
+
+### Sparse Matrix Passed, Dense Matrix Required 
+  - https://stackoverflow.com/questions/28384680/scikit-learns-pipeline-a-sparse-matrix-was-passed-but-dense-data-is-required
+  - http://zacstewart.com/2014/08/05/pipelines-of-featureunions-of-pipelines.html
+
+```
+from sklearn.base import TransformerMixin
+...
+class DenseTransformer(TransformerMixin):
+
+    def transform(self, X, y=None, **fit_params):
+        return X.todense()
+
+    def fit_transform(self, X, y=None, **fit_params):
+        self.fit(X, y, **fit_params)
+        return self.transform(X)
+
+    def fit(self, X, y=None, **fit_params):
+        return self
+...
+pipeline = Pipeline([
+     ('vectorizer', CountVectorizer()), 
+     ('to_dense', DenseTransformer()), 
+     ('classifier', RandomForestClassifier())
+])
 ```

@@ -15,4 +15,5 @@
   * rsync
   * ps
   * tee for storing/viewing output of another command
-  * 
+  * find
+  * tree

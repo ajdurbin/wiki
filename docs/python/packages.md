@@ -104,3 +104,10 @@
   * itertools dropwhile, takewhile
   * pprint
   * docker
+  * warnings
+  * hugraphs
+  * tkinter
+  * lightgbm
+  * glob - good for listing files in nested subdirectories than os.walk
+  * sqlalchemy - another sql agent
+  * uswgi web server

@@ -42,3 +42,13 @@ This page is for miscellaneous notes on deep learning concepts, ideas, and probl
   * google cloud big data platform 
   * vci machine learning repository 
   * github awesome public datasets
+  * autoencoders
+  * places 365 dataset
+  * scikit-image bounding box segmentation
+  * segnet
+  * tsosu technique
+  * visualize outputs in CNN model network layers (ir.com blog post)
+  * MNIST GAN example from https://towardsdatascience.com/demystifying-generative-adversarial-networks-c076d8db8f44
+  * google cloud ml examples, they tag stack overflow posts
+  * twitter/stack-overflow/etc tagging
+  * real-time human pose estimation https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5

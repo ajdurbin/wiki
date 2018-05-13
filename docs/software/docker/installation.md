@@ -1,7 +1,3 @@
-Do I want separate docker image from jenkins and git server? Still looking for good tutorial to tie together. Probably also okay if they're all on single image too. Need to find a good tutorial on this, how does docker get notified to run the image? 
-
-Ideally would want a git push to trigger a jenkins build that pushes to artifactory (internal docker registry) that then deploys it on the docker server. All of these ideally would be separate components. 
-
 ### Ubuntu Server Image 
 
 Docker cannot run inside LXC containers, so we need to make a full virtual machine for it. Ubuntu server is minimal enough for this task.
@@ -55,9 +51,6 @@ Create an account on Docker Hub. Create a private repository //homelab//.
   - https://docs.docker.com/registry/deploying/
   - http://tech.paulcz.net/2016/01/deploying-a-secure-docker-registry/
   - http://tech.paulcz.net/2016/01/secure-docker-with-tls/
-
-It's probably easiest to do this if we host Jenkins on the Docker host. This way we don't need to worry about setting up SSL/TLS for the Docker registry. Also that removes a step from the Jenkins pipeline, since we can wrap the build/push Docker image in a single step and the final step can just be pulling the image from the Docker registry and deploying. Next question is if we want to host the git server on the Docker host too. 
-
 
 ### Docker Compose 
 Tool for defining and running multi-container Docker applications `https://docs.docker.com/compose/`
