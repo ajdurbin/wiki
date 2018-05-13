@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Pfsense - Alex's Personal Wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Pfsense";
+    var mkdocs_page_input_path = "installation/pfsense.md";
+    var mkdocs_page_url = "/installation/pfsense/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Alex's Personal Wiki</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../books/">Books</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../websites/">Websites</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Bash</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../bash/git/">Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bash/regex/">Regex</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bash/snippets/">Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bash/tools/">Tools</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Deep learning</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../deep_learning/scratch/">Scratch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../bittorrent_sync/">Bittorrent sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../freenas/">Freenas</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Pfsense</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#installation">Installation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#pfblockerng">PFBlockerNG</a></li>
+    
+
+    <li class="toctree-l3"><a href="#use-hostnames-for-ssh">Use hostnames for SSH</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../proxmox/">Proxmox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../raspberry_pi/">Raspberry pi</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../torrent_server/">Torrent server</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ubuntu/">Ubuntu</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../windows_10/">Windows 10</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Machine learning</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../machine_learning/methods/">Methods</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Natural language processing</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../natural_language_processing/scratch/">Scratch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Python</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../python/environments/">Environments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../python/packages/">Packages</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../python/scratch/">Scratch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../python/snippets/">Snippets</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Sklearn</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../python/sklearn/snippets/">Snippets</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Software</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../software/artifactory/">Artifactory</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/bittorrent_sync/">Bittorrent sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/calibre/">Calibre</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/ci_cd/">Ci cd</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/docker/">Docker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/emby/">Emby</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/gitea/">Gitea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/gogs/">Gogs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/ideas/">Ideas</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/jenkins/">Jenkins</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/jupyterhub/">Jupyterhub</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/mkdocs/">Mkdocs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/nbviewer/">Nbviewer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/nexus_repository/">Nexus repository</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/plex/">Plex</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/rclone/">Rclone</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/reverse_proxy/">Reverse proxy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/rstudio_rshiny/">Rstudio rshiny</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/torrent_server/">Torrent server</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/travis-ci/">Travis ci</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Docker</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../software/docker/general_use/">General use</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../software/docker/installation/">Installation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../software/docker/jenkins/">Jenkins</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../software/docker/registry/">Registry</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Statistics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../statistics/scratch/">Scratch</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Alex's Personal Wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Installation &raquo;</li>
+        
+      
+    
+    <li>Pfsense</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="installation">Installation</h3>
+<ul>
+<li>Choose 64-bit memstick version</li>
+<li>username admin, hardware password</li>
+<li>hostname: <code>erie</code>, domain: <code>localdomain</code></li>
+<li>Add <code>OPT1, OPT2</code> interfaces and copy firewall rules </li>
+<li>Copy <code>LAN</code> interface configuration to <code>OPT</code> interfaces</li>
+<li>Change DNS servers to Google, OpenDNS</li>
+<li>Change DHCP server available range</li>
+<li>Do not allow DNS server list to be overridden</li>
+</ul>
+<h3 id="pfblockerng">PFBlockerNG</h3>
+<ul>
+<li><code>Firewall -&gt; PFBlockerNG</code></li>
+<li>Control/Command click all outbound firewall rules except for lan and save</li>
+<li>Go to <code>DNSBL</code></li>
+<li>Add new <code>DNSBL</code> feeds, add DNS group name, eg pi-hole, description uses default pi-hole lists, add each pi-hole list to <code>DNSBL</code> and add 'test' for header/description</li>
+<li>List actio switched to unbound and update every hour </li>
+<li>Save, update, force update and watch lists download</li>
+<li>Enable and save</li>
+<li>Do same with EasyList <code>DNSBL</code>, check all, label as test and force update again</li>
+</ul>
+<h3 id="use-hostnames-for-ssh">Use hostnames for SSH</h3>
+<p>From <code>https://www.bytesizedalex.com/pfsense-dns-resolution-for-dhcp-leases/</code>. Go to DNS Resolver and check Register DHCP leases and Register DHCP static mappings.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../proxmox/" class="btn btn-neutral float-right" title="Proxmox">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../freenas/" class="btn btn-neutral" title="Freenas"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../freenas/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../proxmox/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>
