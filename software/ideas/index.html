@@ -59,6 +59,11 @@
           
             <li class="toctree-l1">
 		
+    <a class="" href="../../websites/">Websites</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Bash</span>
     <ul class="subnav">
                 <li class="">
@@ -191,11 +196,31 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../artifactory/">Artifactory</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../bittorrent_sync/">Bittorrent sync</a>
                 </li>
                 <li class="">
                     
+    <a class="" href="../calibre/">Calibre</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ci_cd/">Ci cd</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../docker/">Docker</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../emby/">Emby</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../gitea/">Gitea</a>
                 </li>
                 <li class="">
                     
@@ -245,11 +270,30 @@
     <li class="toctree-l3"><a href="#communication">Communication</a></li>
     
 
+    <li class="toctree-l3"><a href="#word-salad">word salad ###</a></li>
+    
+
     </ul>
                 </li>
                 <li class="">
                     
+    <a class="" href="../jenkins/">Jenkins</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../jupyterhub/">Jupyterhub</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../mkdocs/">Mkdocs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../nbviewer/">Nbviewer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../nexus_repository/">Nexus repository</a>
                 </li>
                 <li class="">
                     
@@ -261,7 +305,41 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../reverse_proxy/">Reverse proxy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../rstudio_rshiny/">Rstudio rshiny</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../torrent_server/">Torrent server</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../travis-ci/">Travis ci</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Docker</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../docker/general_use/">General use</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../docker/installation/">Installation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../docker/jenkins/">Jenkins</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../docker/registry/">Registry</a>
+                </li>
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -401,12 +479,11 @@
 <ul>
 <li>Discord</li>
 <li>IRC</li>
-<li>
-<p>RSS</p>
-</li>
-<li>
-<p>todo list outside wiki</p>
-</li>
+<li>RSS</li>
+</ul>
+<h3 id="word-salad">word salad ###</h3>
+<ul>
+<li>todo list outside wiki</li>
 <li>use Google Calendar more, contacts for address book</li>
 <li>chatbot</li>
 <li>Mkdocs wiki behind reverse proxy and pushed to github pages or readthedocs (can remove signature that bugs me) with notebooks on github provided to nbviewer in some notebook repository</li>
@@ -451,7 +528,46 @@
 <li>if pushing code to github always make a gh-pages branch with some docs in it to be pushed too, at least for some longer projects for nicer to read stuff</li>
 <li>git web hooks</li>
 <li>combine statistics/ml/dl/nlp pages into single directory</li>
+<li>github pages personal page can't be with subdirectories, so try having only single top level page. mkdocs routing to convert dokuwiki text, need to rename start to index</li>
+<li>Manual mkdocs gh-deploy routine with ssh keys and checkout</li>
+<li>sample project to test sphinx functionality?</li>
+<li>continue using dokuwiki on pi (just so it can be used), and then convert files to mkdocs for github pages for outside usage?</li>
+<li>webhooks to trigger ci/cd pipelines</li>
+<li>web service for hosting applications from flask/tornado/gnuicorn</li>
+<li>heroku/pythonanywhere</li>
+<li>mongo/mariadb instead of mysql - recall https://www.reddit.com/r/AskReddit/comments/8fztrk/what_was_the_removing_the_headphone_jack_of/ and discussion of Oracle no longer developing mysql basically</li>
+<li>full virtualmachine with docker installed as docker host</li>
+<li>jenkins dockerfile github to artifactory and docker using travis ci when can</li>
+<li>appears that marathon is only for mesos-based systems</li>
+<li>kubernetes?</li>
+<li>traefik</li>
+<li>"hacking" fake terminal</li>
+<li>calibre server for ebooks</li>
+<li>get docker jenkins git pipeline first before worrying about artifactory</li>
+<li>load balancer</li>
+<li>internal dns</li>
+<li>docker swarm/compose versus a kubernetes solution</li>
+<li>some sort of docker load balancing</li>
+<li>docker traefik</li>
+<li>gitlab has their own ci/cd stuff similar to jenkins/travis-ci</li>
+<li>bettercodehub</li>
+<li>static site generators like Hugo</li>
+<li>reverse proxy for non-static sites, like dokuwiki for instance or any other php web application</li>
+<li>digital ocean tutorials</li>
+<li>teraform</li>
+<li>caddy server</li>
+<li>haproxy</li>
+<li>freeipa</li>
+<li>freepbx</li>
+<li>reddit raspberry pi ups server tutorial</li>
+<li>recipe manager</li>
+<li>docker spark/hadoop images</li>
+<li>sonarqube</li>
 </ul>
+<p>Main goal is to get working git-jenkins-artifactory-docker plugin going. So we'd have a remote git repository to trigger a jenkins build that tests the software before sending to artifactory and then deploying on the docker server. So the jenkins file will be split up to be build the image using docker server, then push image to docker registry, then pull image from docker registry and run. </p>
+<p>Do more scientific computing so go back to learning a compiled code framework, more R shiny stuff, MCMC, Bayesian stats, maybe go back to C++ to do some CUDA, more web development with Flask/Django</p>
+<p>This is a great tutorial: <code>https://medium.com/bettercode/how-to-build-a-modern-ci-cd-pipeline-5faa01891a5b</code> and somewhat related <code>https://medium.com/@evheniybystrov/continuous-delivery-of-react-app-with-jenkins-and-docker-8a1ae1511b86</code></p>
+<p><strong>Plan</strong>: Put Jenkins on Docker host and use Docker's built in registry, look into Docker git server that's lightweight enough. Use these for development and then push applications to Heroku and use travis-ci for Github.</p>
               
             </div>
           </div>
@@ -459,7 +575,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../mkdocs/" class="btn btn-neutral float-right" title="Mkdocs">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../jenkins/" class="btn btn-neutral float-right" title="Jenkins">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../gogs/" class="btn btn-neutral" title="Gogs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -491,7 +607,7 @@
         <span><a href="../gogs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../mkdocs/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../jenkins/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

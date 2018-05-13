@@ -59,6 +59,11 @@
           
             <li class="toctree-l1">
 		
+    <a class="" href="../../../websites/">Websites</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Bash</span>
     <ul class="subnav">
                 <li class="">
@@ -181,7 +186,13 @@
     <a class="current" href="./">Snippets</a>
     <ul class="subnav">
             
+    <li class="toctree-l4"><a href="#usage">Usage</a></li>
+    
+
     <li class="toctree-l4"><a href="#gridsearchcv-over-multiple-models">GridSearchCV Over Multiple Models</a></li>
+    
+
+    <li class="toctree-l4"><a href="#sparse-matrix-passed-dense-matrix-required">Sparse Matrix Passed, Dense Matrix Required</a></li>
     
 
     </ul>
@@ -197,11 +208,31 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../../../software/artifactory/">Artifactory</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../../software/bittorrent_sync/">Bittorrent sync</a>
                 </li>
                 <li class="">
                     
+    <a class="" href="../../../software/calibre/">Calibre</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../software/ci_cd/">Ci cd</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../software/docker/">Docker</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../../software/emby/">Emby</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../software/gitea/">Gitea</a>
                 </li>
                 <li class="">
                     
@@ -213,7 +244,23 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../../software/jenkins/">Jenkins</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../software/jupyterhub/">Jupyterhub</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../../software/mkdocs/">Mkdocs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../software/nbviewer/">Nbviewer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../software/nexus_repository/">Nexus repository</a>
                 </li>
                 <li class="">
                     
@@ -225,7 +272,41 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../../software/reverse_proxy/">Reverse proxy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../software/rstudio_rshiny/">Rstudio rshiny</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../../software/torrent_server/">Torrent server</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../software/travis-ci/">Travis ci</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Docker</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../software/docker/general_use/">General use</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../software/docker/installation/">Installation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../software/docker/jenkins/">Jenkins</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../software/docker/registry/">Registry</a>
+                </li>
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -281,7 +362,9 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="gridsearchcv-over-multiple-models">GridSearchCV Over Multiple Models</h3>
+                <h3 id="usage">Usage</h3>
+<p>GridSearchCV, Pipeline, fit_transform vs fit, AUC, ROC, how to do hyperparameter search before training/cross-validation and then testing?</p>
+<h3 id="gridsearchcv-over-multiple-models">GridSearchCV Over Multiple Models</h3>
 <p>Normally <code>GridSearchCV</code> is for hyperparameter optimization. This method is extended using the following class, where you specify a dictionary of models and a dictionary of dictionaries of their parameters to search over. After fitting this helper, call <code>helper.score_summary(sort_by = 'mean_score')</code> to return a dataframe of every model fit with parameters and scoring metrics. </p>
 <pre><code>import pandas as pd
 import numpy as np
@@ -381,6 +464,32 @@ helper.fit(X_cancer, y_cancer, scoring = 'f1', n_jobs = -1)
 helper.score_summary(sort_by = 'mean_score')
 
 </code></pre>
+
+<h3 id="sparse-matrix-passed-dense-matrix-required">Sparse Matrix Passed, Dense Matrix Required</h3>
+<ul>
+<li>https://stackoverflow.com/questions/28384680/scikit-learns-pipeline-a-sparse-matrix-was-passed-but-dense-data-is-required</li>
+<li>http://zacstewart.com/2014/08/05/pipelines-of-featureunions-of-pipelines.html</li>
+</ul>
+<pre><code>from sklearn.base import TransformerMixin
+...
+class DenseTransformer(TransformerMixin):
+
+    def transform(self, X, y=None, **fit_params):
+        return X.todense()
+
+    def fit_transform(self, X, y=None, **fit_params):
+        self.fit(X, y, **fit_params)
+        return self.transform(X)
+
+    def fit(self, X, y=None, **fit_params):
+        return self
+...
+pipeline = Pipeline([
+     ('vectorizer', CountVectorizer()), 
+     ('to_dense', DenseTransformer()), 
+     ('classifier', RandomForestClassifier())
+])
+</code></pre>
               
             </div>
           </div>
@@ -388,7 +497,7 @@ helper.score_summary(sort_by = 'mean_score')
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../../software/bittorrent_sync/" class="btn btn-neutral float-right" title="Bittorrent sync">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../../software/artifactory/" class="btn btn-neutral float-right" title="Artifactory">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../snippets/" class="btn btn-neutral" title="Snippets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -420,7 +529,7 @@ helper.score_summary(sort_by = 'mean_score')
         <span><a href="../../snippets/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../../software/bittorrent_sync/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../../software/artifactory/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

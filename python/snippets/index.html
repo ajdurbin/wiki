@@ -59,6 +59,11 @@
           
             <li class="toctree-l1">
 		
+    <a class="" href="../../websites/">Websites</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Bash</span>
     <ul class="subnav">
                 <li class="">
@@ -194,6 +199,9 @@
     <li class="toctree-l3"><a href="#retrying-module">retrying module</a></li>
     
 
+    <li class="toctree-l3"><a href="#suppress-warnings">Suppress Warnings</a></li>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -215,11 +223,31 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../../software/artifactory/">Artifactory</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../software/bittorrent_sync/">Bittorrent sync</a>
                 </li>
                 <li class="">
                     
+    <a class="" href="../../software/calibre/">Calibre</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/ci_cd/">Ci cd</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/docker/">Docker</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../software/emby/">Emby</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/gitea/">Gitea</a>
                 </li>
                 <li class="">
                     
@@ -231,7 +259,23 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../software/jenkins/">Jenkins</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/jupyterhub/">Jupyterhub</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../software/mkdocs/">Mkdocs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/nbviewer/">Nbviewer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/nexus_repository/">Nexus repository</a>
                 </li>
                 <li class="">
                     
@@ -243,7 +287,41 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../software/reverse_proxy/">Reverse proxy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/rstudio_rshiny/">Rstudio rshiny</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../software/torrent_server/">Torrent server</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../software/travis-ci/">Travis ci</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Docker</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../software/docker/general_use/">General use</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../software/docker/installation/">Installation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../software/docker/jenkins/">Jenkins</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../software/docker/registry/">Registry</a>
+                </li>
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -462,6 +540,17 @@ def unreliable_function_might_return_none():
 </code></pre>
 
 <p>This snippet will continue to retry the function so long as the <code>retry_on_result</code> function is true.</p>
+<h3 id="suppress-warnings">Suppress Warnings</h3>
+<p>For cases when we want to suppress warnings</p>
+<pre><code>import warnings 
+...
+def warn(*arg, **kwargs):
+    pass
+...
+if __name__ == '__main__':
+    warnings.warn = warn
+    ...
+</code></pre>
               
             </div>
           </div>
