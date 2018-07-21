@@ -1,539 +1,1234 @@
+
+
+
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Packages - Alex's Personal Wiki</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Packages";
-    var mkdocs_page_input_path = "python/packages.md";
-    var mkdocs_page_url = "/python/packages/";
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Alex's Personal Wiki</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="Alexander Durbin">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.2">
+    
+    
+      
+        <title>Packages - Alex's Personal Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Alex's Personal Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../books/">Books</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../websites/">Websites</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Bash</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../bash/git/">Git</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../bash/regex/">Regex</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../bash/snippets/">Snippets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../bash/tools/">Tools</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Deep learning</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../deep_learning/scratch/">Scratch</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Installation</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../installation/bittorrent_sync/">Bittorrent sync</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/freenas/">Freenas</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/pfsense/">Pfsense</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/proxmox/">Proxmox</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/raspberry_pi/">Raspberry pi</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/torrent_server/">Torrent server</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/ubuntu/">Ubuntu</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../installation/windows_10/">Windows 10</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Machine learning</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../machine_learning/methods/">Methods</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Natural language processing</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../natural_language_processing/scratch/">Scratch</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Python</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../environments/">Environments</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Packages</a>
-    <ul class="subnav">
             
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../scratch/">Scratch</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../snippets/">Snippets</a>
-                </li>
-                <li class="">
-                    
-    <span class="caption-text">Sklearn</span>
-    <ul class="subnav">
-                <li class="toctree-l3">
-                    
-    <a class="" href="../sklearn/snippets/">Snippets</a>
-                </li>
-    </ul>
-                </li>
-    </ul>
-	    </li>
+              <span class="md-header-nav__topic">
+                Alex's Personal Wiki
+              </span>
+              <span class="md-header-nav__topic">
+                Packages
+              </span>
+            
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Software</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../software/artifactory/">Artifactory</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/bittorrent_sync/">Bittorrent sync</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/calibre/">Calibre</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/ci_cd/">Ci cd</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/docker/">Docker</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/emby/">Emby</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/gitea/">Gitea</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/gogs/">Gogs</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/ideas/">Ideas</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/jenkins/">Jenkins</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/jupyterhub/">Jupyterhub</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/mkdocs/">Mkdocs</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/nbviewer/">Nbviewer</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/nexus_repository/">Nexus repository</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/plex/">Plex</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/rclone/">Rclone</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/reverse_proxy/">Reverse proxy</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/rstudio_rshiny/">Rstudio rshiny</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/torrent_server/">Torrent server</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../software/travis-ci/">Travis ci</a>
-                </li>
-                <li class="">
-                    
-    <span class="caption-text">Docker</span>
-    <ul class="subnav">
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../software/docker/general_use/">General use</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../software/docker/installation/">Installation</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../software/docker/jenkins/">Jenkins</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../software/docker/registry/">Registry</a>
-                </li>
-    </ul>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Statistics</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../statistics/scratch/">Scratch</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+        </div>
       </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Alex's Personal Wiki</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
+      <div class="md-flex__cell md-flex__cell--shrink">
         
-          <li>Python &raquo;</li>
-        
-      
-    
-    <li>Packages</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main">
-            <div class="section">
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Alex's Personal Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../books/" title="Books" class="md-nav__link">
+      Books
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../games/" title="Games" class="md-nav__link">
+      Games
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../goals/" title="Goals" class="md-nav__link">
+      Goals
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../websites/" title="Sites" class="md-nav__link">
+      Sites
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Hosts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Hosts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hosts/proxmox/" title="Proxmox" class="md-nav__link">
+      Proxmox
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hosts/freenas/" title="FreeNAS" class="md-nav__link">
+      FreeNAS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hosts/pfsense/" title="pfSense" class="md-nav__link">
+      pfSense
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hosts/raspberry_pi/" title="Raspberry Pi" class="md-nav__link">
+      Raspberry Pi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hosts/ubuntu/" title="Ubuntu" class="md-nav__link">
+      Ubuntu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hosts/windows_10/" title="Windows 10" class="md-nav__link">
+      Windows 10
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Unix
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Unix
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unix/git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unix/regex/" title="Regex" class="md-nav__link">
+      Regex
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unix/tools/" title="Tools" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Datasets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Datasets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../datasets/datasets/" title="Datasets" class="md-nav__link">
+      Datasets
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Deep Learning
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Deep Learning
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deep_learning/links/" title="Links" class="md-nav__link">
+      Links
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deep_learning/scratch/" title="Scratch" class="md-nav__link">
+      Scratch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Machine Learning
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Machine Learning
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../machine_learning/methods/" title="Methods" class="md-nav__link">
+      Methods
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../machine_learning/trees/" title="Trees" class="md-nav__link">
+      Trees
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Natural Language Processing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Natural Language Processing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../natural_language_processing/concepts/" title="Concepts" class="md-nav__link">
+      Concepts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../natural_language_processing/scratch/" title="Scratch" class="md-nav__link">
+      Scratch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" checked>
+    
+    <label class="md-nav__link" for="nav-12">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../environments/" title="Environments" class="md-nav__link">
+      Environments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Packages" class="md-nav__link md-nav__link--active">
+      Packages
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../scratch/" title="Scratch" class="md-nav__link">
+      Scratch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-4" type="checkbox" id="nav-12-4">
+    
+    <label class="md-nav__link" for="nav-12-4">
+      Django
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-4">
+        Django
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../django/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-5" type="checkbox" id="nav-12-5">
+    
+    <label class="md-nav__link" for="nav-12-5">
+      Flask
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-5">
+        Flask
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../flask/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-6" type="checkbox" id="nav-12-6">
+    
+    <label class="md-nav__link" for="nav-12-6">
+      Gensim
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-6">
+        Gensim
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gensim/usage/" title="Usage" class="md-nav__link">
+      Usage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-7" type="checkbox" id="nav-12-7">
+    
+    <label class="md-nav__link" for="nav-12-7">
+      Scikit-Learn
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-7">
+        Scikit-Learn
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sklearn/scratch/" title="Scratch" class="md-nav__link">
+      Scratch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      R
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        R
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rlang/packages/" title="Packages" class="md-nav__link">
+      Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rlang/scratch/" title="Scratch" class="md-nav__link">
+      Scratch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rlang/shiny/" title="Shiny" class="md-nav__link">
+      Shiny
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Software
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Software
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/bittorrent_sync/" title="Bittorrent Sync" class="md-nav__link">
+      Bittorrent Sync
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/calibre/" title="Calibre" class="md-nav__link">
+      Calibre
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/ci_cd/" title="CI/CD" class="md-nav__link">
+      CI/CD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/design/" title="Design" class="md-nav__link">
+      Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/gitea/" title="Gitea" class="md-nav__link">
+      Gitea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/ideas/" title="Ideas" class="md-nav__link">
+      Ideas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/jupyterhub/" title="JupyterHub" class="md-nav__link">
+      JupyterHub
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/mkdocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/plex/" title="Plex" class="md-nav__link">
+      Plex
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/rclone/" title="RClone" class="md-nav__link">
+      RClone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/reverse_proxy/" title="Reverse Proxy" class="md-nav__link">
+      Reverse Proxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/rstudio_rshiny/" title="RStudio/RShiny" class="md-nav__link">
+      RStudio/RShiny
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/torrent_server/" title="Torrent Server" class="md-nav__link">
+      Torrent Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/travis-ci/" title="Travis-CI" class="md-nav__link">
+      Travis-CI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-15" type="checkbox" id="nav-14-15">
+    
+    <label class="md-nav__link" for="nav-14-15">
+      Docker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-14-15">
+        Docker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/docker/general_use/" title="General Usage" class="md-nav__link">
+      General Usage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/docker/installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/docker/registry/" title="Registry" class="md-nav__link">
+      Registry
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Statistics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Statistics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../statistics/scratch/" title="Scratch" class="md-nav__link">
+      Scratch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
+                
+                
+                  <h1>Packages</h1>
+                
                 <ul>
 <li>NumPy</li>
 <li>SciPy</li>
 <li>pandas</li>
 <li>matplotlib</li>
-<li>Seaborn<ul>
+<li>Seaborn</li>
 <li>Histograms, density, plots, etc. Easier plotting of common statistical plots using dataframes.</li>
-</ul>
-</li>
-<li>scikit-learn<ul>
+<li>scikit-learn</li>
 <li>Machine learning toolkit. Consistent syntax for various classification and regression techniques.</li>
-</ul>
-</li>
-<li>StatsModels<ul>
-<li>Compared to scikit-learn, more statistically oriented with output of p-values, etc. Output similar to <code>R</code>  statistical tests. Contains many statistical tests not found in scipy.stats or scikit-learn.</li>
-</ul>
-</li>
-<li>TensorFlow<ul>
+<li>StatsModels</li>
+<li>Compared to scikit-learn, more statistically oriented with output of p-values, etc. Output similar to <code>R</code> statistical tests. Contains many statistical tests not found in scipy.stats or scikit-learn.</li>
+<li>TensorFlow</li>
 <li>Deep learning library, uses GPU for acceleration.</li>
-</ul>
-</li>
-<li>Keras<ul>
+<li>Keras</li>
 <li>Wrapper for TensorFlow with common utilities.</li>
-</ul>
-</li>
-<li>XGBoost<ul>
+<li>XGBoost</li>
 <li>Popular library for implementing boosted trees. Faster than scikit-learn implementation. Can offload on GPU.</li>
-</ul>
-</li>
-<li>PyODBC<ul>
+<li>PyODBC</li>
 <li>Database connection utility.</li>
-</ul>
-</li>
-<li>smtplib<ul>
+<li>smtplib</li>
 <li>Used for sending emails given a SMTP server.</li>
-</ul>
-</li>
-<li>Multiprocessing<ul>
+<li>Multiprocessing</li>
 <li>Relatively straightforward to use parallel processing module. Most used components are <code>Pool, map, starmap</code>.</li>
-</ul>
-</li>
-<li>scikit-image<ul>
+<li>scikit-image</li>
 <li>Image processing module with various utilities for transforming images</li>
-</ul>
-</li>
-<li>Numba<ul>
+<li>Numba</li>
 <li>Just-in-time compiler for array-oriented, math-heavy python code. Can offload calculations to GPU.</li>
-</ul>
-</li>
-<li>PySpark<ul>
+<li>PySpark</li>
 <li>Spark connector for python. Offers modelling modules as well.</li>
-</ul>
-</li>
-<li>locust<ul>
+<li>locust</li>
 <li>HTTP server load testing tool, useful for testing APIs.</li>
-</ul>
-</li>
-<li>flask/flask_redis/flask_api<ul>
+<li>flask/flask_redis/flask_api</li>
 <li>Microservice for writing web applications and web APIs. Redis module is for server-side caching.</li>
-</ul>
-</li>
-<li>tqdm<ul>
+<li>tqdm</li>
 <li>Useful progress bar for looping operations</li>
-</ul>
-</li>
-<li>hue<ul>
+<li>hue</li>
 <li>Prettier terminal printing</li>
-</ul>
-</li>
-<li>Requests<ul>
+<li>Requests</li>
 <li>HTTP post/get operations for web servers</li>
-</ul>
-</li>
-<li>retrying<ul>
+<li>retrying</li>
 <li>Useful for retrying connections to web servers, database servers, etc.</li>
-</ul>
-</li>
-<li>shapely<ul>
+<li>shapely</li>
 <li>Python geometry library for pip tests, overlapping polygons, etc.</li>
-</ul>
-</li>
-<li>Pickle<ul>
+<li>Pickle</li>
 <li>python serialization module</li>
-</ul>
-</li>
 <li>hashlib</li>
-<li>nltk<ul>
+<li>nltk</li>
 <li>NLP library</li>
-</ul>
-</li>
-<li>Gensim<ul>
+<li>Gensim</li>
 <li>NLP library with Doc2Vec</li>
-</ul>
-</li>
-<li>SpaCy<ul>
+<li>SpaCy</li>
 <li>High performance NLP library</li>
-</ul>
-</li>
-<li>Logging<ul>
+<li>Logging</li>
 <li>logging module</li>
-</ul>
-</li>
-<li>re<ul>
+<li>re</li>
 <li>Regular expressions module</li>
-</ul>
-</li>
-<li>shutil<ul>
+<li>shutil</li>
 <li>Shell utilities, like copying files from one directory to another. Somewhat overlaps with os module</li>
-</ul>
-</li>
-<li>pytesseract<ul>
+<li>pytesseract</li>
 <li>OCR of images</li>
-</ul>
-</li>
-<li>textract<ul>
+<li>textract</li>
 <li>Able to read 'text' PDFs, docx files, etc.</li>
-</ul>
-</li>
 <li>opencv-python</li>
-<li>tox<ul>
+<li>tox</li>
 <li>test suite for programs</li>
-</ul>
-</li>
-<li>tempfile<ul>
+<li>tempfile</li>
 <li>create temporary files/directories</li>
-</ul>
-</li>
-<li>faker<ul>
+<li>faker</li>
 <li>create fake data like names, addresses, phone numbers text for population of databases or testing</li>
-</ul>
-</li>
-<li>jupyter widgets<ul>
+<li>jupyter widgets</li>
 <li>not quite R Shiny</li>
-</ul>
-</li>
-<li>dateutil<ul>
+<li>dateutil</li>
 <li>Additional datetime functionality, like relative deltas</li>
-</ul>
-</li>
-<li>limeml<ul>
+<li>limeml</li>
 <li>explain predictions of classifiers graphically - have not looked into more</li>
-</ul>
-</li>
-<li>pyowm<ul>
+<li>pyowm</li>
 <li>Python wrapper for OpenWeatherMap API</li>
-</ul>
-</li>
-<li>plotly<ul>
+<li>plotly</li>
 <li>Interactive graphics. Complicated syntax and need API</li>
-</ul>
-</li>
-<li>Bokeh<ul>
+<li>Bokeh</li>
 <li>Slightly interactive graphics</li>
-</ul>
-</li>
-<li>nose<ul>
+<li>nose</li>
 <li>similar testing to tox</li>
-</ul>
-</li>
-<li>ast<ul>
-<li>abstract syntax trees. Turn a string of a command into the actual command. </li>
-</ul>
-</li>
-<li>affinity<ul>
+<li>ast</li>
+<li>abstract syntax trees. Turn a string of a command into the actual command.</li>
+<li>affinity</li>
 <li>sometimes os parallel processes are weird</li>
-</ul>
-</li>
-<li>itertools<ul>
+<li>itertools</li>
 <li>lots of useful functions in here, repea and chain.from_iterable to unpack nested lists</li>
-</ul>
-</li>
-<li>joblib<ul>
+<li>joblib</li>
 <li>more advanced distributed computing</li>
-</ul>
-</li>
-<li>scrapy<ul>
+<li>scrapy</li>
 <li>web scraper</li>
-</ul>
-</li>
 <li>gensim sklearn api</li>
 <li>jupyter notebook slides</li>
-<li>pipenv<ul>
+<li>pipenv</li>
 <li>pip + venv</li>
-</ul>
-</li>
 <li>opencv-python</li>
 <li>dash, plotly, bokeh</li>
 <li>rise is jupyter notebook slideshows</li>
@@ -551,54 +1246,141 @@
 <li>glob - good for listing files in nested subdirectories than os.walk</li>
 <li>sqlalchemy - another sql agent</li>
 <li>uswgi web server</li>
+<li>cassandra</li>
+<li>sqlalchemy</li>
+<li>kafka</li>
+<li>pyproj - cartographic transformations and geo computation</li>
+<li>python dataclasses <a href="https://realpython.com/python-data-classes/#type-hints">https://realpython.com/python-data-classes/#type-hints</a></li>
+<li>geopandas</li>
+<li>Subprocess.Popen</li>
+<li>ogr2ogr</li>
+<li>lxml</li>
+<li>micropython</li>
+<li>circuitpython</li>
+<li>dateutil.relativedelta</li>
+<li>tox</li>
+<li>sqlite3</li>
+<li>mechanical soup</li>
+<li>pypiserver</li>
+<li><a href="https://pypiserver.readthedocs.io/en/latest/">https://pypiserver.readthedocs.io/en/latest/</a></li>
+<li><a href="https://github.com/pypiserver/pypiserver#quickstart-installation-and-usage">https://github.com/pypiserver/pypiserver#quickstart-installation-and-usage</a></li>
+<li><a href="https://github.com/dexterous/pypiserver-on-the-cloud">https://github.com/dexterous/pypiserver-on-the-cloud</a></li>
+<li>autogui</li>
+<li>wxPython</li>
+<li>werkzeug - flask dependency with password hashing utilities</li>
+<li>flask-login</li>
+<li>unittest</li>
+<li>flashtext</li>
+<li>High performance keyword searching library, scales linearly with number of terms, preferred method over regular expressions for exact word searches</li>
+<li>pyprind like tqp progress bar</li>
+<li>perfplot performance plots for python code</li>
+<li>dash</li>
+<li>pipenv alternative to both pip and virtualenv usage</li>
+<li>pyflux time series</li>
+<li>fire generate cli for any project</li>
+<li>imbalanced learn</li>
+<li>psutil for montoring processes like command line ps tool</li>
+<li>pomegranete - probalistic and graphical models, mixture models, hierarchical</li>
+<li>flashtext</li>
+<li>autocorrect</li>
+<li>textblob</li>
+<li>spacy-universe</li>
+<li>lexnlp</li>
+<li>asyncio</li>
+<li>uuid for generating universally unique identifiers</li>
+<li>traceback</li>
+<li>pydoct for marking graphs, interface to graphviz in pure Python</li>
+<li>eli5, visualize and debug models and track work of algorithm step by step, supports sklearn, xgboost, lightgbm, lightning, sklearn-crfsuite</li>
+<li>dist-keras for distributed keras, elphas, spark-deep-learning</li>
+<li>scrapy</li>
+<li>bokeh, plotly</li>
+<li>hug, bottle flask alternatives?</li>
+<li>praw, python reddit api wrapper</li>
+<li>MIME, combine with smtplib for email functionality</li>
+<li>click</li>
+<li>python jenkins</li>
+<li>autograph</li>
+<li>yellobrick - machine learning visualization library</li>
+<li>pyldavis - visualize lda</li>
 </ul>
+                
+                  
+                
               
-            </div>
+              
+                
+
+
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../scratch/" class="btn btn-neutral float-right" title="Scratch">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../environments/" class="btn btn-neutral" title="Environments"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../environments/" title="Environments" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Environments
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../scratch/" title="Scratch" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Scratch
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
   </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    
+      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
       
+      <script>app.initialize({version:"0.17.5",url:{base:"../.."}})</script>
       
-        <span><a href="../environments/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+    
+    
       
-      
-        <span style="margin-left: 15px"><a href="../scratch/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js"></script>
-      <script src="../../search/require.js"></script>
-      <script src="../../search/search.js"></script>
-
-</body>
+    
+  </body>
 </html>
