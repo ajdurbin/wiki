@@ -1,0 +1,9 @@
+- feature union
+- gridsearchcv and pipelines
+- fit vs fit_transform
+- transforming data using training set parameters
+- decision function/predicted probabilities attributes
+- feature importance
+- learning curves (model performance as a function of dataset size)
+- contour plots of predictions
+- feature selection model based vs iterative examples

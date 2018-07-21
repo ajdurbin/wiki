@@ -1,4 +1,4 @@
-### Installation 
+# Installation #
 
 `apt-get install mysql-server -y` with software password
 
@@ -10,7 +10,7 @@ Access SQL server with `mysql -u root -p` and type in password, then `drop table
 
 `cd gogs` and `./gogs web`
 
-Go to `http://gogsip:3000`
+Go to <http://gogsip:3000>
 
 Change run user to root
 

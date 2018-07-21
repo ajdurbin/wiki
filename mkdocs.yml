@@ -1,2 +1,69 @@
-site_name: Alex's Personal Wiki 
-theme: readthedocs
+site_name: Alex's Personal Wiki
+site_author: Alexander Durbin
+theme:
+    'name': 'material'
+pages:
+    - Home: index.md
+    - Books: books.md
+    - Games: games.md
+    - Goals: goals.md
+    - Sites: websites.md
+    - Hosts:
+        - 'Proxmox': 'hosts/proxmox.md'
+        - 'FreeNAS': 'hosts/freenas.md'
+        - 'pfSense': 'hosts/pfsense.md'
+        - 'Raspberry Pi': 'hosts/raspberry_pi.md'
+        - 'Ubuntu': 'hosts/ubuntu.md'
+        - 'Windows 10': 'hosts/windows_10.md'
+    - Unix:
+        - 'Git': 'unix/git.md'
+        - 'Regex': 'unix/regex.md'
+        - 'Tools': 'unix/tools.md'
+    - Datasets:
+        - 'Datasets': 'datasets/datasets.md'
+    - Deep Learning:
+        - 'Links': 'deep_learning/links.md'
+        - 'Scratch': 'deep_learning/scratch.md'
+    - Machine Learning:
+        - 'Methods': 'machine_learning/methods.md'
+        - 'Trees': 'machine_learning/trees.md'
+    - Natural Language Processing:
+        - 'Concepts': 'natural_language_processing/concepts.md'
+        - 'Scratch': 'natural_language_processing/scratch.md'
+    - Python:
+        - 'Environments': 'python/environments.md'
+        - 'Packages': 'python/packages.md'
+        - 'Scratch': 'python/scratch.md'
+        - 'Django':
+            - 'General': 'python/django/general.md'
+        - 'Flask':
+            - 'General': 'python/flask/general.md'
+        - 'Gensim':
+            - 'Usage': 'python/gensim/usage.md'
+        - 'Scikit-Learn':
+            - 'Scratch': 'python/sklearn/scratch.md'
+    -  R:
+        - 'Packages': 'rlang/packages.md'
+        - 'Scratch': 'rlang/scratch.md'
+        - 'Shiny': 'rlang/shiny.md'
+    - Software:
+        - 'Bittorrent Sync': 'software/bittorrent_sync.md'
+        - 'Calibre': 'software/calibre.md'
+        - 'CI/CD': 'software/ci_cd.md'
+        - 'Design': 'software/design.md'
+        - 'Gitea': 'software/gitea.md'
+        - 'Ideas': 'software/ideas.md'
+        - 'JupyterHub': 'software/jupyterhub.md'
+        - 'MkDocs': 'software/mkdocs.md'
+        - 'Plex': 'software/plex.md'
+        - 'RClone': 'software/rclone.md'
+        - 'Reverse Proxy': 'software/reverse_proxy.md'
+        - 'RStudio/RShiny': 'software/rstudio_rshiny.md'
+        - 'Torrent Server': 'software/torrent_server.md'
+        - 'Travis-CI': 'software/travis-ci.md'
+        - 'Docker':
+            - 'General Usage': 'software/docker/general_use.md'
+            - 'Installation': 'software/docker/installation.md'
+            - 'Registry': 'software/docker/registry.md'
+    - Statistics:
+        - 'Scratch': 'statistics/scratch.md'

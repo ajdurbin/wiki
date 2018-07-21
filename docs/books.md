@@ -1,15 +1,14 @@
-### Machine Learning 
-  - Introduction To Machine Learning With Python
-  - Introduction To Statistical Learning
-  - Elements Of Statistical Learning
-  - Deep Learning With Python
-
-### Unix 
-  - Mastering Regular Expressions
-  - The Linux Command Line
-
-
-  - mining the social web
-  - introduction to information retrieval
-  - nltk book html only
-  - git book
+# textbooks #
+- Introduction To Machine Learning With Python
+- Introduction To Statistical Learning
+- Elements Of Statistical Learning
+- Deep Learning With Python
+- Mastering Regular Expressions
+- The Linux Command Line
+- introduction to information retrieval <https://nlp.stanford.edu/IR-book/>
+- nltk <https://www.nltk.org/book/>
+- git book <https://git-scm.com/book/en/v2>
+- structure and interpretation of computer programs <https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-4.html>
+- stats done wrong <https://www.statisticsdonewrong.com/>
+- gang of four design patterns <http://www.blackwasp.co.uk/gofpatterns.aspx>
+- r for data science <http://r4ds.had.co.nz/>
