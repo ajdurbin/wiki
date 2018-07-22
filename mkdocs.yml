@@ -19,6 +19,7 @@ pages:
         - 'Git': 'unix/git.md'
         - 'Regex': 'unix/regex.md'
         - 'Tools': 'unix/tools.md'
+        - 'Scratch': 'unix/scratch.md'
     - Datasets:
         - 'Datasets': 'datasets/datasets.md'
     - Deep Learning:
