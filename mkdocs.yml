@@ -1,7 +1,6 @@
 site_name: Alex's Personal Wiki
 site_author: Alexander Durbin
-theme:
-    'name': 'material'
+theme: readthedocs
 pages:
     - Home: index.md
     - Books: books.md
